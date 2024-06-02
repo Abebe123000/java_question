@@ -71,7 +71,7 @@ class Product {
     }
 
     public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+        imageUrl = imageUrl;
     }
 
     // 在庫管理メソッド

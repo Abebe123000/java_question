@@ -9,7 +9,6 @@ class Main {
         product.addStock(3);
         product.removeStock(5);
         product.applyDiscount(5);
-        // stock がなぜ97にならない？
         System.out.println(product);
     }
 }
@@ -57,7 +56,6 @@ class Product {
 
     public void setDescription(String description) {
         this.description = description;
-        this.addStock(10);
     }
 
     public void setPrice(int price) {
@@ -73,7 +71,8 @@ class Product {
     }
 
     public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+        // this.imageUrl に代入する
+        imageUrl = imageUrl;
     }
 
     // 在庫管理メソッド

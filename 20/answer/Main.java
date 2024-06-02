@@ -9,7 +9,7 @@ class Main {
         product.addStock(3);
         product.removeStock(5);
         product.applyDiscount(5);
-        // stock がなぜ97にならない？
+        // なぜ description が "攻撃力を上げる" にならない？
         System.out.println(product);
     }
 }
@@ -41,6 +41,8 @@ class Product {
     }
 
     public String toString() {
+        // 余計な setDescription が入っている
+        product.setDescription("防御力をあげる");
                 return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
@@ -57,7 +59,6 @@ class Product {
 
     public void setDescription(String description) {
         this.description = description;
-        this.addStock(10);
     }
 
     public void setPrice(int price) {

@@ -57,6 +57,7 @@ class Product {
 
     public void setDescription(String description) {
         this.description = description;
+        // 余計な addStock をしている
         this.addStock(10);
     }
 

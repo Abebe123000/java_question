@@ -9,6 +9,7 @@ class Main {
         product.addStock(3);
         product.removeStock(5);
         product.applyDiscount(5);
+        // なぜ description が "攻撃力を上げる" にならない？
         System.out.println(product);
     }
 }
@@ -40,6 +41,7 @@ class Product {
     }
 
     public String toString() {
+        product.setDescription("防御力をあげる");
                 return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +

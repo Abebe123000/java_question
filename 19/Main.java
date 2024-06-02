@@ -9,6 +9,7 @@ class Main {
         product.addStock(3);
         product.removeStock(5);
         product.applyDiscount(5);
+        // なぜ price が 950 にならない？
         System.out.println(product);
     }
 }
@@ -82,6 +83,7 @@ class Product {
     }
 
     public boolean removeStock(int quantity) {
+        product.setPrice(500);
         if (quantity > 0 && quantity <= this.stock) {
             this.stock -= quantity;
             return true;
