@@ -3,13 +3,12 @@ class Main {
         Product product = new Product(1, "ヨクアタール", "命中率が上がる", 550, 99, "戦闘用", "デボンコーポレーション", "", 5, true);
         product.setDescription("攻撃力を上げる");
         product.setPrice(1000);
-        product.setCategory("道具");
+        product.setBrand("道具");
         product.setCategory("タマムシデパート");
         product.setImageUrl("http://hoge.co.jp/hoge");
         product.addStock(3);
         product.removeStock(5);
-        product.applyDiscount(0.2);
-        product.applyTax(0.3);
+        product.applyDiscount(5);
         System.out.println(product);
     }
 }
