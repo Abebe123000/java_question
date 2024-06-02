@@ -78,19 +78,14 @@ class Product {
     public void addStock(int quantity) {
         if (quantity > 0) {
             this.stock += quantity;
-            System.out.println("Added " + quantity + " to stock. New stock: " + this.stock);
-        } else {
-            System.out.println("Invalid quantity. Must be positive.");
         }
     }
 
     public boolean removeStock(int quantity) {
         if (quantity > 0 && quantity <= this.stock) {
             this.stock -= quantity;
-            System.out.println("Removed " + quantity + " from stock. New stock: " + this.stock);
             return true;
         } else {
-            System.out.println("Invalid quantity or insufficient stock.");
             return false;
         }
     }
@@ -100,9 +95,6 @@ class Product {
         if (discountPercentage > 0 && discountPercentage <= 100) {
             int oldPrice = this.price;
             this.price = (int) (this.price * (1 - discountPercentage / 100));
-            System.out.println("Applied " + discountPercentage + "% discount. Old price: " + oldPrice + ", New price: " + this.price);
-        } else {
-            System.out.println("Invalid discount percentage.");
         }
     }
 
@@ -110,9 +102,6 @@ class Product {
         if (taxRate > 0) {
             int oldPrice = this.price;
             this.price = (int) (this.price * (1 + taxRate / 100));
-            System.out.println("Applied " + taxRate + "% tax. Old price: " + oldPrice + ", New price: " + this.price);
-        } else {
-            System.out.println("Invalid tax rate.");
         }
     }
 
