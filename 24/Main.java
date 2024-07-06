@@ -1,7 +1,7 @@
-public class ExamResult {
+public class Main {
     public static void main(String[] args) {
         int studentGrade = 85; // 学生の点数
-        String resultMessage = "";  // if文の手前で宣言
+        String resultMessage = "";
 
         if (studentGrade >= 60) {
             resultMessage = "Pass"; // 合格

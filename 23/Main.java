@@ -1,4 +1,4 @@
-public class DiscountExample {
+public class Main {
     public static void main(String[] args) {
         int customerType = 2; // 1: Regular, 2: VIP
         double discount = 0.0; 
@@ -9,7 +9,5 @@ public class DiscountExample {
         } else {
             System.out.println("No discount for regular customers.");
         }
-
-        // 他のコードでdiscountは使用されない
     }
 }

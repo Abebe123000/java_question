@@ -1,4 +1,4 @@
-public class ExamResult {
+public class Main {
     public static void main(String[] args) {
         int studentGrade = 85; // 学生の点数
 
