@@ -83,7 +83,7 @@ class Product {
     }
 
     public boolean removeStock(int quantity) {
-        product.setPrice(500);
+        this.setPrice(500);
         if (quantity > 0 && quantity <= this.stock) {
             this.stock -= quantity;
             return true;

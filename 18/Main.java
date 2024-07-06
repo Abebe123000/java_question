@@ -9,6 +9,7 @@ class Main {
         product.addStock(3);
         product.removeStock(5);
         product.applyDiscount(5);
+        // なぜ imageUrl が変わっていない？
         System.out.println(product);
     }
 }

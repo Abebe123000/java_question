@@ -41,7 +41,7 @@ class Product {
     }
 
     public String toString() {
-        product.setDescription("防御力をあげる");
+        this.setDescription("防御力をあげる");
                 return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
